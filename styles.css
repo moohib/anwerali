@@ -240,8 +240,7 @@ button{ font: inherit; }
 /* ===================================================================
    SECTIONS
 =================================================================== */
-.section{ padding: clamp(4rem, 9vw, 6.5rem) 0; min-height: 100vh; align-content: center;
-        }
+.section{ padding: clamp(4rem, 9vw, 6.5rem) 0; min-height: 100vh; align-content: center; }
 .section-alt{ background: var(--paper-2); }
 .section-contact{ background: var(--ink); color: var(--text-paper); }
 
