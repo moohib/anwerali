@@ -99,6 +99,7 @@ button{ font: inherit; }
   background: rgba(18,21,31,.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--ink-line);
+   overflow-x: hidden;
 }
 .header-inner{
   display: flex; align-items: center; justify-content: space-between;
