@@ -108,7 +108,7 @@ button{ font: inherit; }
 .mark{
   font-family: var(--font-name);
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: var(--text-paper);
   text-decoration: none;
   display: flex; align-items: center; gap: .5em;
