@@ -4,19 +4,19 @@
    Change values here to re-theme the whole site.
 =================================================================== */
 :root{
-  --ink:        #12151f;   /* deep ink navy — hero, footer, dark surfaces */
-  --ink-soft:   #1c2130;   /* lifted ink surface */
+  --ink:        #000814;   /* deepest navy — hero, footer, dark surfaces */
+  --ink-soft:   #001d3d;   /* lifted ink surface */
   --paper:      #ffffff;   /* paper — light section background */
-  --paper-2:    #f6f6f6;   /* neutral off-white — alternate section background */
-  --paper-line: #e4e4e4;   /* hairline rules on paper */
-  --ink-line:   #333a4d;   /* hairline rules on ink */
-  --text-ink:   #1a1d27;   /* body text on paper */
+  --paper-2:    #f2f4f7;   /* neutral off-white, cool tint — alternate section background */
+  --paper-line: #dde3ea;   /* hairline rules on paper */
+  --ink-line:   #003566;   /* hairline rules on ink */
+  --text-ink:   #000814;   /* body text on paper */
   --text-paper: #ffffff;   /* body text on ink */
-  --text-muted: #6b6a60;   /* secondary text on paper */
-  --text-muted-ink: #a3a8bd; /* secondary text on ink */
-  --brass:      #a9812f;   /* metallic brass accent — links, marks */
-  --brass-bright: #c99a3d;
-  --seal:       #a63d2f;   /* seal-red — the nuqta, emphasis */
+  --text-muted: #4a5568;   /* secondary text on paper */
+  --text-muted-ink: #7d92ad; /* secondary text on ink */
+  --brass:      #003566;   /* steel-blue accent — links, marks (readable on paper) */
+  --brass-bright: #ffd60a; /* bright gold — hover/highlight on dark surfaces */
+  --seal:       #ffc300;   /* gold — the nuqta, buttons, emphasis */
 
   --font-name: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-title: "Google Sans", "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -83,7 +83,7 @@ button{ font: inherit; }
   transform: translate(-50%, -50%);
   transition: opacity .3s ease, transform .15s ease;
   opacity: 0;
-  box-shadow: 0 0 0 4px rgba(166,61,47,.12);
+  box-shadow: 0 0 0 4px rgba(255,195,0,.18);
 }
 .nuqta.is-visible{ opacity: 1; }
 @media (max-width: 780px){ .nuqta{ display: none; } }
@@ -96,7 +96,7 @@ button{ font: inherit; }
 =================================================================== */
 .site-header{
   position: sticky; top: 0; z-index: 100;
-  background: rgba(18,21,31,.92);
+  background: rgba(0,8,20,.92);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--ink-line);
    overflow-x: hidden;
@@ -229,9 +229,9 @@ button{ font: inherit; }
   transition: background .15s ease, color .15s ease, border-color .15s ease;
 }
 .btn-primary{
-  background: var(--seal); color: #fff;
+  background: var(--seal); color: var(--ink);
 }
-.btn-primary:hover{ background: #8f3327; }
+.btn-primary:hover{ background: var(--brass-bright); }
 .btn-ghost{
   border-color: var(--ink-line); color: var(--text-paper);
 }
