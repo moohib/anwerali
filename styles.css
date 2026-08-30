@@ -176,8 +176,8 @@ button{ font: inherit; }
 .hero{
   position: relative;
   background:
-    repeating-linear-gradient(0deg, rgba(0,53,102,.35) 0 1px, transparent 1px 40px),
-    repeating-linear-gradient(90deg, rgba(0,53,102,.35) 0 1px, transparent 1px 40px),
+    repeating-linear-gradient(0deg, rgba(0,53,102,.55) 0 1px, transparent 1px 100px),
+    repeating-linear-gradient(0deg, rgba(0,53,102,.22) 0 1px, transparent 1px 20px),
     var(--ink);
   color: var(--text-paper);
   overflow: hidden;
