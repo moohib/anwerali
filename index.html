@@ -16,11 +16,11 @@
 <meta property="og:url" content="https://www.anwerali.me/">
 <meta property="og:title" content="Anwer Ali - Design Consultant, Freelancer &amp; Researcher">
 <meta property="og:description" content="Anwer Ali is a design consultant and researcher. He has a diverse portfolio of brands and actively contributes to design scholarship as an Assistant Professor.">
-<meta property="og:image" content="https://www.anwerali.me/anwer-ali.png">
+<meta property="og:image" content="https://www.anwerali.me/assets/img/anwer-ali.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Anwer Ali - Design Consultant, Freelancer &amp; Researcher">
 <meta name="twitter:description" content="Anwer Ali is a design consultant and researcher. He has a diverse portfolio of brands and actively contributes to design scholarship as an Assistant Professor.">
-<meta name="twitter:image" content="https://www.anwerali.me/anwer-ali.png">
+<meta name="twitter:image" content="https://www.anwerali.me/assets/img/anwer-ali.png">
  
 <!-- Structured data: helps Google show a knowledge-panel-style result -->
 <script type="application/ld+json">
@@ -29,7 +29,7 @@
   "@type": "Person",
   "name": "Anwer Ali",
   "url": "https://www.anwerali.me/",
-  "image": "https://www.anwerali.me/anwer-ali.png",
+  "image": "https://www.anwerali.me/assets/img/anwer-ali.png",
   "jobTitle": "Assistant Professor & Design Program In-Charge",
   "worksFor": {
     "@type": "CollegeOrUniversity",
@@ -69,7 +69,12 @@
 
 <a class="skip-link" href="#main">Skip to content</a>
 
-<header class="site-header" id="top">
+<!-- Non-sticky scroll target. Keep #top on this element, not on the
+     sticky header below — a fragment link to a stuck sticky element
+     reports itself as "already at 0" and the browser skips the scroll. -->
+<a id="top" tabindex="-1"></a>
+
+<header class="site-header">
   <div class="wrap header-inner">
     <a class="mark" href="#top">
       Anwer Ali
@@ -82,6 +87,7 @@
       <ul id="nav-list" class="nav-list">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
+        <li><a href="reflections.html">Reflections</a></li>
         <li><a href="#practice">Practice</a></li>
         <li><a href="#recognition">Recognition</a></li>
         <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -110,9 +116,9 @@
             <a class="btn btn-ghost" href="#practice">See the design practice</a>
           </div>
         </div>
-        <!-- EDIT: profile photo — swap the file to update it -->
+        <!-- EDIT: profile photo — swap the file in assets/img/ to update it -->
         <div class="hero-photo">
-          <img src="anwer-ali.webp" alt="Portrait of Anwer Ali" width="97" height="100" loading="eager" fetchpriority="high">
+          <img src="assets/img/anwer-ali.webp" alt="Portrait of Anwer Ali" width="97" height="100" loading="eager" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -192,10 +198,27 @@
     </div>
   </section>
 
+  <!-- ============================= REFLECTIONS (teaser) ============================= -->
+  <!-- The full, growing list lives on its own page: reflections.html.
+       Keep this section short — it's a pointer, not the archive. -->
+  <section class="section" id="reflections">
+    <div class="wrap">
+      <p class="section-eyebrow">03 — Reflections</p>
+      <h2>Notes &amp; reflections</h2>
+      <p class="section-intro">
+        Shorter, more personal pieces on design practice, education and Pakistan —
+        an ongoing series, written here.
+      </p>
+      <div class="research-links">
+        <a href="reflections.html" class="link-arrow">Browse all reflections</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ============================= PRACTICE ============================= -->
   <section class="section section-alt" id="practice">
     <div class="wrap">
-      <p class="section-eyebrow">03 — Design Practice</p>
+      <p class="section-eyebrow">04 — Design Practice</p>
       <h2>Designs and Identities</h2>
       <p class="section-intro">
         A selection of identity and advertising work from client and consultancy
@@ -255,7 +278,7 @@
   <!-- ============================= RECOGNITION ============================= -->
   <section class="section" id="recognition">
     <div class="wrap">
-      <p class="section-eyebrow">04 — Recognition</p>
+      <p class="section-eyebrow">05 — Recognition</p>
       <div class="split">
         <div class="split-lead">
           <h2>Shows and Talks</h2>
@@ -281,7 +304,7 @@
   <!-- ============================= CONTACT ============================= -->
   <section class="section section-contact" id="contact">
     <div class="wrap">
-      <p class="section-eyebrow">05 — Contact</p>
+      <p class="section-eyebrow">06 — Contact</p>
       <h2>Get in touch</h2>
       <p class="section-intro">
         Open to design consultation, research collaboration, speaking invitations,
